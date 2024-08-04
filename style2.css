@@ -1,0 +1,396 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu-bar{
+    background-color: azure;
+    border: 1px solid rgb(255, 166, 0);
+    height: 60px;
+}
+.menu-bar ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 10px;
+    
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+.menu-bar ul li{
+    font-size: 1.5rem;
+}
+.menu-bar ul li:hover{
+    border-radius: 3px;
+    background-color: beige;
+}
+.sub-menu1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu1 ul{
+    display: block;
+    margin: 20px;
+}
+.menu-bar ul li:hover .sub-menu1 ul li{
+    width: 150px;
+    padding: 10px;
+
+} */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    /* background: #22438c; */
+    background-color: rgba(250, 193, 129, 0.363);
+    
+}
+/* ul li div.logo-div {
+    display: flex;
+    width: 40px;
+    height: 30px;
+    margin: 0 2rem;
+    border: 1px solid black; */
+    /* flex-direction: row; */
+/* } */
+/* .logo-div img {
+    width: 40px;
+    height: 30px;
+    border: 1px solid black;
+}
+.logo-div p {
+    font-size: 1.5rem;
+    margin-right: 2.5rem;
+}  */
+.logo {
+    font-size: 2.3rem;
+    margin: 0 2.4rem;
+    background: -webkit-linear-gradient(rgb(24, 2, 2), rgb(197, 197, 36));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.logo span {
+    font-size: 2.7rem;
+   
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+    display: block;
+    padding: 20px 20px;
+    /* color: #fff; */
+    /* color: #333333; */
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.8rem;
+    
+}
+ul li ul.dropdown li {
+    display: block;
+    
+}
+ul li ul.dropdown {
+    width: 170px;
+    /* background: #22438c; */
+    background-color: rgba(248, 188, 120, 0.363);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    /* background: #112c66; */
+    background-color: rgba(247, 161, 62, 0.363);
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+
+/**Main body section1 started**/
+
+.main-content-flex {
+    display: flex;
+    width: 100%;
+    height:500px;
+    margin: 50px 0;
+    /* border: 2px solid black; */
+}
+.main-content-flex div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 49%;
+    height: 495px;
+    margin: 0.1rem 0.1rem;
+    border-radius: 15px;
+    
+}
+.main-content-flex .main-content-box1 {
+    font-size: 5rem;
+    margin-left: 1rem;
+    background: -webkit-linear-gradient(#d80505, #806868);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main-content-flex .main-content-box2 {
+    margin-left: 1.3rem;
+}
+.main-content-flex div img {
+    width: 100%;
+    height: 495px;
+    border-radius: 4rem;
+    
+}
+
+
+/**Main body section1 ended**/
+
+/**Main body section2 started**/
+
+.menu-flex {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    margin: 40px 0;
+    border: 1px solid #fff;
+    background-color: rgba(251, 228, 201, 0.363);
+}
+.menu-flex div {
+    display: flex;
+    margin: 3rem 1.2rem;
+    flex-direction: column;
+    
+}
+.menu-flex div img {
+    width:210px;
+    height:210px;
+    border: 2px solid orange;
+    border-radius: 50%;
+}
+.menu-flex div a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #333333;
+    text-align: center;
+    position: relative;
+    bottom: -15px;
+}
+
+
+/**Main body section2 ended**/
+
+/**Breakfast page started**/
+.break-head p {
+    font-size: 50px;
+    text-align: center;
+    background-color: beige;
+    margin-top: 120px;
+    height: 45px;
+    color: #333333;
+    font-family: "Frank Ruhl Libre",Georgia,serif;
+
+
+}
+.side-head {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: bisque;
+    margin-bottom: 20px;
+    margin: 30px;
+    line-height: 1.5;
+    
+}
+
+.main-body {
+    display: flex;
+    margin: 30px;
+    background-color: rgba(224, 243, 243, 0.5);
+}
+
+.card1{
+    width: 300px;
+    height: 400px;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 20px;
+    text-decoration: none;
+}
+.card1:hover {
+    box-shadow: 7px 5px 5px red;
+    transform: scale(1.1);
+
+}
+.idly {
+    width: 300px;
+    height: 250px;
+}
+.card-timing {
+    font-size: 1.5rem;
+    margin: 10px;
+    color: #333333;
+    font-family: 'Times New Roman', Times, serif;
+}
+.card-name {
+    font-size: 3rem;
+    margin-left: 50px;
+    color: #333333;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/**Breakfast page ended**/
+
+/**Idly.html page style started**/
+
+.head-section {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #333333;
+    margin: 60px;
+
+}
+.head-section p a {
+    text-decoration: none;
+    color: #333333;
+
+}
+.content-box {
+    width: 60%;
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 50px;
+}
+.body-section img {
+    width: 600px;
+    height: 500px;
+    margin-left: 60px;
+    margin: 50px;
+}
+.ingredients{
+    /* background-color: rgb(248, 161, 190); */
+}
+.ingredients ul {
+    font-size: 2rem;
+}
+.head-ingr {
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+/**Idly.html page style ended**/
+
+
+/**Sub-About Page Started **/
+
+
+body img.about-bg-img {
+    /* background-image: url(Images/about\ us\ bg.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+
+/**Sub-About Page ended **/
+
+/**Sub-Contact Page Started**/
+
+body img.contact-bg-img{
+    /* background-image: url(Images/contact\ us\ image.jpg); */
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.contact-div {
+    color: #333333;
+    margin: 50px 40px;
+}
+
+.Contact{
+    font-size: 70px;
+    margin:20px;
+}
+.name{
+    font-size: 30px;
+    margin: 30px;
+}
+.mail{
+    font-size: 30px;
+    margin: 20px;
+}
+
+
+
+/**Sub-Contact Page Ended **/
+
+
+/**Footer Started**/
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+    background-color: rgba(248, 203, 151, 0.363);
+    margin-top: 500px;
+}
+.flex1,.flex2 {
+    width: 300px;
+    height: 200px;
+    /* border:1px solid black; */
+    margin: 20px;
+    
+}
+.flex1 li ,.flex2{
+    margin: 10px;
+    padding: 5px;
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: left;
+    
+    
+}
+.flex1 li a {
+    text-decoration: none;
+    color: #333333;
+    
+}
+.flex2 li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 2.5rem;
+}
+
+.copyright {
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: center;
+}
+
+/**Footer Ended**/
